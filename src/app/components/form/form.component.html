@@ -1,0 +1,5 @@
+<form>
+    <label for="userBook">Book Name: </label>
+    <input type="text" id="userBook" name="userBook" [(ngModel)]="userBook" (keyup)="filter()">
+</form>
+<app-book [matchedBook]="matchedBook"></app-book>
